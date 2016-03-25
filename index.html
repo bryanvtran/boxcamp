@@ -91,8 +91,10 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <img class="img-responsive" src="img/boxcamp-white.png" alt="">
+                        <h2>Store your stuff. Enjoy your summer.</h2>
+                        <h2 class="subheading">A storage solution made by students, for students. </h2>
                         <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
+                        <ul class="list-inline intro-school-buttons">
                             <li>
                                 <a href="#" class="btn btn-default btn-lg"><span class="network-name">UCLA</span></a>
                             </li>
@@ -106,6 +108,10 @@
                                 <a href="#" class="btn btn-default btn-lg"><span class="network-name">LMU</span></a>
                             </li>
                         </ul>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <p class="lead">Learn More</p>
+                            <i class="fa fa-angle-double-down fa-3x"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,9 +123,7 @@
     <!-- /.intro-header -->
 
     <!-- Page Content -->
-
-	<a  name="services"></a>
-    <div class="content-section-b">
+    <div id="about" class="content-section-b">
 
         <div class="container">
           <!--
@@ -135,10 +139,10 @@
                 </div>
             </div>-->
             <div class="row">
-        			<h2 class="text-center section-heading">Lorem Ipsum</h2>
+        			<h2 class="text-center section-heading">About Us</h2>
         			<hr>
         			<p class="lead">
-                Aenean malesuada eu ligula non vestibulum. Nulla ligula nisi, scelerisque ut consequat pharetra, semper eu orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis vehicula ante, non feugiat orci. In vehicula, sem eget vestibulum laoreet, nisl sem iaculis mi, id eleifend libero neque nec ipsum. Sed placerat accumsan faucibus. Donec luctus id risus vitae dignissim. Nunc tellus enim, scelerisque vitae pretium sed, mattis vel tellus. Mauris eu venenatis turpis. Morbi non eros faucibus, eleifend tellus eu, commodo erat. Integer eget pellentesque elit. Morbi dolor erat, lobortis nec iaculis vel, consectetur efficitur turpis. Vestibulum vel scelerisque nisl. Mauris gravida neque mattis magna auctor, id fringilla mi malesuada. Maecenas finibus sit amet ante nec placerat. Quisque vel augue lobortis, sollicitudin risus lacinia, gravida justo.
+              BoxCamp is the answer to enjoying your summer, faster. That starts with giving you the easiest moving experience you’ll ever have. Whether you can’t afford to take everything home or just don’t want to, send your belongings to BoxCamp and go enjoy your stress-free summer!
               </p>
         		</div>
         </div>
@@ -166,22 +170,29 @@
       				<div class="col-lg-4 col-md-4 text-center">
                 <div class="feature">
       						<i class="fa fa-dropbox fa-5x"></i>
-      						<h2 class="section-heading">One</h2>
-      						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum sem sed congue posuere. Nulla justo ante, molestie eu molestie non, egestas id risus. Sed tempus purus id ante dapibus, at tincidunt leo.</p>
+      						<h2 class="section-heading">Order</h2>
+      						<p class="lead">
+                    <em>No hidden fees. No Taxes. Free boxes.</em><br>
+                    Choose your storage package or select individual items on your school page. We’ll even store your microwave, mini fridge, and bicycle. All orders are a flat price all summer.
+                  </p>
                 </div>
             	</div>
       				<div class="col-lg-4 col-md-4 text-center">
                 <div class="feature">
                   <i class="fa fa-building fa-5x"></i>
-                  <h2 class="section-heading">Two</h2>
-      						<p class="lead">Cras ut nunc sed justo hendrerit egestas. Vestibulum a nunc non mi euismod condimentum. Vestibulum accumsan metus vel porta luctus. Mauris vel turpis ac ex convallis suscipit. Fusce scelerisque pretium laoreet. </p>
+                  <h2 class="section-heading">Pick Up Materials</h2>
+      						<p class="lead">
+                    You can pick up your free boxes before finals start. We’ll put them together for you right on campus. Visit our <a href="#" class="inline-link">Packing Tips</a> page to see what to store and how to store it!
+                  </p>
                 </div>
               </div>
       				<div class="col-lg-4 col-md-4 text-center">
                 <div class="feature">
       						<i class="fa fa-check-square-o fa-5x"></i>
-      						<h2 class="section-heading">Three</h2>
-      						<p class="lead">Curabitur dapibus posuere euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam quis bibendum nibh, in consequat tortor. Integer sed quam augue. </p>
+      						<h2 class="section-heading">Drop-Off and Enjoy!</h2>
+      						<p class="lead">
+                    Bring your packed belongings to our convenient locations right on campus. With a quick last few steps, you’ll be on your way to enjoying your summer!
+                  </p>
                 </div>
               </div>
       			 </div>
@@ -198,7 +209,7 @@
             <h2 class=""style="margin-bottom: 20px;">Order Now:</h2>
           </div>
             <div class="row text-center">
-                <ul class="list-inline banner-social-buttons">
+                <ul class="list-inline banner-school-buttons">
                   <li>
                       <a href="#" class="btn btn-default btn-lg"><span class="network-name">UCLA</span></a>
                   </li>
@@ -243,9 +254,23 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+    </script>
 
 </body>
 

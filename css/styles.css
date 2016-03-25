@@ -56,7 +56,6 @@ h6 {
 .intro-message {
     position: relative;
     padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 .intro-message > img {
@@ -65,10 +64,8 @@ h6 {
     margin: 0 auto;
 }
 
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+.intro-message .subheading {
+    font-size: 24px;
 }
 
 .intro-divider {
@@ -76,6 +73,7 @@ h6 {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .intro-message > h3 {
@@ -91,13 +89,17 @@ h6 {
         font-size: 3em;
     }
 
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
+    ul.intro-school-buttons > li {
+        display: inline-block;
+        margin-bottom: 15px;
         padding: 0;
     }
 
-    ul.intro-social-buttons > li:last-child {
+    .btn-group-lg>.btn, .btn-lg {
+      padding: 6px 12px;
+    }
+
+    ul.intro-school-buttons > li:last-child {
         margin-bottom: 0;
     }
 
@@ -108,6 +110,27 @@ h6 {
     .feature > p{
       margin-bottom: 15%;
     }
+
+
+}
+
+a.btn.btn-circle {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+a.btn.btn-circle:hover {
+  color: #ddd;
+}
+
+a.inline-link {
+  color: #111;
+  text-decoration: underline;
+}
+
+a.inline-link:hover {
+  color: #777;
+  text-decoration: underline;
 }
 
 .network-name {
@@ -153,15 +176,15 @@ h6 {
     margin-bottom: 0;
 }
 
-.banner-social-buttons {
+.banner-school-buttons {
     display: inline-block;
 }
 
-.banner-social-buttons h2 {
+.banner-school-buttons h2 {
   margin-top: 10%;
 }
 
-.banner-social-buttons > li {
+.banner-school-buttons > li {
   margin-top: 0;
 }
 
@@ -172,13 +195,13 @@ h6 {
         font-size: 3em;
     }
 
-    ul.banner-social-buttons > li {
-        display: block;
+    ul.banner-school-buttons > li {
+        display: inline-block;
         margin-bottom: 20px;
         padding: 0;
     }
 
-    ul.banner-social-buttons > li:last-child {
+    ul.banner-school-buttons > li:last-child {
         margin-bottom: 0;
     }
 }
