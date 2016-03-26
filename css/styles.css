@@ -167,13 +167,13 @@ a.inline-link:hover {
 }
 
 #quotes-container {
-  height: 22em;
+  height: 25em;
 }
 /* indicator position */
 #quote-carousel .carousel-indicators {
   right: 50%;
   top: auto;
-  bottom: -10px;
+  bottom: -.5em;
   margin-right: -19px;
 }
 /* indicator color */
@@ -188,7 +188,23 @@ a.inline-link:hover {
   margin-bottom:1px;
 }
 
+.carousel-indicators {
+  position: relative;
+}
+
 .carousel-inner {
+   margin-bottom: 3em;
+}
+
+.carousel {
+  padding-bottom: 50px;
+}
+
+@media(max-width:767px) {
+  #quotes-container {
+    height: 30em;
+  }
+
 }
 
 .banner {
