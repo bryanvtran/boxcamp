@@ -255,3 +255,30 @@ footer a:hover {
 p.copyright {
     margin: 15px 0 0;
 }
+
+/*** FAQs ***/
+.faqs {
+  color: #111;
+  text-decoration: underline;
+}
+
+p .faqs:hover {
+  text-decoration: none;
+  color: 777;
+}
+
+.faqs-arrow {
+  margin-right: 1em;
+}
+
+#faqs-answers {
+  max-width: 80%;
+}
+
+#faqs-answers .row {
+  padding-top: 50px;
+}
+
+#faqs-answers p {
+  margin-bottom: 3em;
+}
