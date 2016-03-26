@@ -203,6 +203,57 @@
     </div>
     <!-- /.content-section-b -->
 
+    <div class="content-section-a">
+
+        <div class="container" id="quotes-container">
+          <div class="row">
+            <h2 class="text-center">What Our Clients Say</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                <!-- Bottom Carousel Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#quote-carousel" data-slide-to="1"></li>
+                  <li data-target="#quote-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Carousel Slides / Quotes -->
+                <div class="carousel-inner">
+                  <!-- Quote 1 -->
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+                        <small><strong>Vulputate M., Dolor</strong></small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Quote 2 -->
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>&ldquo;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam.&rdquo;</p>
+                        <small><strong>Fringilla A., Vulputate Sit</strong></small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Quote 3 -->
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>&ldquo;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.&rdquo;</p>
+                        <small><strong>Aenean A., Justo Cras</strong></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     <div class="banner">
         <div class="container">
           <div class="row text-center">
@@ -255,21 +306,13 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/custom.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(function() {
-        $('a.page-scroll').bind('click', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-        });
-    });
+
     </script>
 
 </body>
