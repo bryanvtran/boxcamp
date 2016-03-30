@@ -298,3 +298,27 @@ p .faqs:hover {
 #faqs-answers p {
   margin-bottom: 3em;
 }
+
+/** packing **/
+#packing {
+  max-width: 90%;
+}
+
+/** schools **/
+.profile img {
+  max-height: 400px;
+}
+
+.profile {
+  padding-bottom: 2em;
+}
+
+@media(min-width:767px) {
+  .profile {
+    padding: 2em 8em;
+  }
+  .profile img {
+    max-height: 200px;
+  }
+
+}
