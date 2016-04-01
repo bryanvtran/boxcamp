@@ -103,10 +103,22 @@
     <!-- /.intro-header -->
 
     <!-- Page Content -->
-    <div id="about" class="content-section-a">
+    <div id="faqs" class="content-section-a">
 
         <div class="container">
             <div class="row">
+              <ul>
+                   <li><p class="lead faqs">What If I can’t drop off/pick up my belongings?</p></li>
+                   <div class="answer" id="faqs-answers">
+                     <p class="lead">
+                        Yes and no… <br><br>-If you are returning EARLIER than your expected return date, No. Unfortunately, we cannot move-back your move-in date due to the organization of our storage warehouse.
+                        <br>-If you are returning LATER than expected, Yes. You may change your move-in date up to a week before your originally scheduled  move-in date.<br><br>*If you change your move-in date later than a week before your previous delivery was scheduled, a $30 holding fee will be assessed every day you are late.*
+                      </p>
+                    </div>
+
+
+
+              </ul>
               <a class="page-scroll" href="#faqs-answers">
                 <p class="lead faqs"><i class="fa fa-angle-right faqs-arrow"></i>What If I can’t drop off/pick up my belongings?</p>
               </a>
@@ -253,7 +265,11 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+    $(".answer").hide();
 
+    $("li").click(function(){
+      $(this).next().toggle("slow", "linear");
+    });
     </script>
 
 </body>

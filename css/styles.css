@@ -291,20 +291,36 @@ p.copyright {
 /*** FAQs ***/
 .faqs {
   color: #111;
+  text-decoration: none;
+}
+
+#faqs li p:hover,
+#faqs li p:active,
+#faqs li p:focus {
   text-decoration: underline;
 }
 
-p .faqs:hover {
-  text-decoration: none;
-  color: 777;
+#faqs li {
+    display: block;
 }
 
-.faqs-arrow {
-  margin-right: 1em;
+#faqs li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 10px;
+    float: left;
+    margin-top: 4px;
+    color: #111;
+    margin-left: -.5em;
+}
+
+#faqs li p {
+  top: -10px;
 }
 
 #faqs-answers {
-  max-width: 80%;
+
 }
 
 #faqs-answers .row {
