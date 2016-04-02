@@ -291,13 +291,11 @@ p.copyright {
 /*** FAQs ***/
 .faqs {
   color: #111;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-#faqs li p:hover,
-#faqs li p:active,
-#faqs li p:focus {
-  text-decoration: underline;
+#faqs li p:hover {
+  text-decoration: none;
 }
 
 #faqs li {
