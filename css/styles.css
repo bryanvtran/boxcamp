@@ -334,6 +334,21 @@ p.copyright {
   max-width: 90%;
 }
 
+.top-icons {
+  max-width: 80%;
+}
+
+.packing-img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.packing-side-img {
+  width: 50px;
+  height: auto;
+}
+
 /** schools **/
 .profile img {
   max-width: 80%;
