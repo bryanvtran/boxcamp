@@ -128,70 +128,110 @@
 
     <div class="content-section-a">
       <div class="container">
-        <div class="row">
-          <iframe src="https://docs.google.com/forms/d/1JJxcRMtIKL4YhokpFXbAiVt6TBVPHpeSptazZUr3v2I/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
-      	<div class="row">
-      		<div class="col-lg-12 text-center v-center">
-      			<h1>Checkout Form</h1>
-
-      			<div class="form-group col-lg-4 col-lg-offset-4">
-      				<label class="control-label" for="textinput">Budget</label>
-      				<input class="form-control" id="textinput" name="textinput" placeholder="Placeholder" type="text">
-      				<div class="alert alert-danger valid-budget-error">Please enter a valid number.</div>
-      			</div>
-      		</div>
-        </div>
       	<div class="row center-block">
-      			<form class="calculator">
-      				<div class="col-md-4 col-offset-4">
-      					<p>Options</p>
+          <div style="margin-bottom: 2em;" class="text-center"><h2 class="">What are your storage needs?</h2></div>
 
-      					<div class="checkbox">
-      						<label for="pos-checkboxes-0"><input id="pos-checkboxes-0" name="checkboxes" type="checkbox" data-value="10">$10</label>
-      					</div>
-
-      					<div class="checkbox">
-      						<label for="pos-checkboxes-1"><input id="pos-checkboxes-1" name="checkboxes" type="checkbox" data-value="20">$20</label>
-      					</div>
-
-      					<div class="checkbox">
-      						<label for="pos-checkboxes-2"><input id="pos-checkboxes-2" name="checkboxes" type="checkbox" data-value="30">$30</label>
-      					</div>
-
-      					<div class="checkbox">
-      						<label for="pos-checkboxes-3"><input id="pos-checkboxes-3" name="checkboxes" type="checkbox" data-value="40">$40</label>
-      					</div>
-      				</div>
-      				<!--<div class="col-md-6">
-      					<p>Additional Options</p>
-
-      					<div class="checkbox">
-      						<label for="neg-checkboxes-0"><input id="neg-checkboxes-0" name="checkboxes" type="checkbox" data-value=""> No
-      						windows</label>
-      					</div>
-
-      					<div class="checkbox">
-      						<label for="neg-checkboxes-1"><input id="neg-checkboxes-1" name="checkboxes" type="checkbox" data-value="-0.34">
-      						7th Owner wtih pets</label>
-      					</div>
-
-      					<div class="checkbox">
-      						<label for="neg-checkboxes-2"><input id="neg-checkboxes-2" name="checkboxes" type="checkbox" data-value="-0.33">
-      						Built before 1900</label>
-      					</div>
-
-      					<div class="checkbox">
-      						<label for="neg-checkboxes-3"><input id="neg-checkboxes-3" name="checkboxes" type="checkbox" data-value="-0.32">
-      						Bottom of hill</label>
-      					</div>
-      				</div>-->
-      			</form>
+          <div style="margin-bottom: 3em;" class="row">
+            <div class="col-md-4">
+              <h4>BoxCamp Starter Pack</h4>
+              <p class="lead">
+                2 MEDIUM (18”x18”x18”) boxes<br>
+                Constructed and taped FREE<br>
+                Storage all summer <br>
+                $100 insurance per box <br>
+                Free campus pickup and delivery <br>
+              </p>
+            </div>
+            <div class="col-md-4 preferred">
+              <h4>BoxCamp Preferred Pack</h4>
+              <p class="lead">
+                2 LARGE (24”x18”x18”) boxes <br>
+                Constructed and taped FREE <br>
+                Storage all summer<br>
+                $100 insurance per box <br>
+                Free campus pickup and delivery <br>
+                *One large box can be substituted for a mini fridge or microwave* <br>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h4>BoxCamp Ultimate Supreme Pack</h4>
+              <p class="lead">
+                4 large (24”x18”x18”) boxes <br>
+                Constructed and taped FREE <br>
+                Storage all summer<br>
+                $100 insurance per box<br>
+                Free campus pickup and delivery <br>
+                *One large box can be substituted for a mini fridge or microwave* <br>
+              </p>
+            </div>
           </div>
-      			<div class="col-lg-12 text-center v-center">
-      				<h2>Total Cost $<span class="cost_display"></span></h2>
-      			</div>
-      		</div>
+          <form>
+            <fieldset class="form-group">
+              <label for="exampleSelect1">BoxCamp Packages</label>
+              <select class="form-control" id="exampleSelect1">
+                <option>BoxCamp Starter Pack - $75 (save $5!)</option>
+                <option>BoxCamp Preferred Pack - $100 (save $10!)</option>
+                <option>BoxCamp Ultimate Supreme Pack - $195 (saves $25!)</option>
+              </select>
+            </fieldset>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                BoxCamp Starter Pack
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                BoxCamp Preferred Pack
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                BoxCamp Ultimate Supreme Pack
+              </label>
+            </div>
+            <fieldset class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              <small class="text-muted">We'll never share your email with anyone else.</small>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label for="exampleSelect2">Example multiple select</label>
+              <select multiple class="form-control" id="exampleSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="exampleTextarea">Example textarea</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" class="form-control-file" id="exampleInputFile">
+              <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+            </fieldset>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="col-lg-12 text-center v-center">
+            <h2>Total Cost $<span class="cost_display"></span></h2>
+          
+          </div>
       	</div><!-- /row -->
       </div><!-- /container full -->
     </div>
@@ -223,7 +263,6 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/custom.js"></script>
-    <script src="../js/calculator.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
